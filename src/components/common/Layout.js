@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import Logo from '../../images/logo.png';
+import Logo from '../../images/chefkiss.png';
 
 // Styles
 import '../../styles/app.css'
@@ -20,9 +20,9 @@ const DefaultLayout = ({ children, bodyClass, isHome }) => {
     const site = {
         "title": `Chef's Kiss. Every time.`,
         'subtitle': 'Recipes endorsed by Jessica Viti',
-        'twitterUrl': 'https://twitter.com/flotiq',
-        'facebookUrl': 'https://www.facebook.com/Flotiq-104200727751200/',
-        'siteUrl': ''
+        'twitterUrl': '',
+        'facebookUrl': '',
+        'siteUrl': 'www.chefskiss.blog'
     }
 
     return (
@@ -47,7 +47,7 @@ const DefaultLayout = ({ children, bodyClass, isHome }) => {
                                 <div className="site-mast-right">
                                     { site.twitterUrl && <a href={ site.twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
                                     { site.facebookUrl && <a href={ site.facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
-                                    <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${site.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
+                                    <a className="site-nav-item" href={ `http://www.chefskiss.blog` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
                                 </div>
                             </div>
                             { isHome ?
